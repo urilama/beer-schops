@@ -425,6 +425,20 @@
       font-size: 1rem; color: var(--green-mid);
     }
 
+    /* ─── BEER IMAGE ────────────────────────────────── */
+    .beer-img {
+      width: 100%; height: 180px;
+      border-radius: 5px; margin-bottom: 1.4rem;
+      overflow: hidden; position: relative;
+    }
+    .beer-img img {
+      width: 100%; height: 100%;
+      object-fit: cover; display: block;
+      opacity: .9;
+      transition: transform .45s cubic-bezier(.16,1,.3,1), opacity .3s;
+    }
+    .beer:hover .beer-img img { transform: scale(1.06); opacity: 1; }
+
     /* ─── CONTACT ─────────────────────────────────── */
     .contact-wrap {
       display: grid; grid-template-columns: 1fr 1.6fr;
@@ -628,6 +642,9 @@
         <div class="beer-grid">
 
           <article class="glass beer rv rv-d1">
+            <div class="beer-img" style="background:linear-gradient(135deg,#0d1a0a 0%,#1a3a0d 45%,#2d5c1a 75%,#4a7a0a 100%);">
+              <img src="image%20references/beer1.png" alt="Quantum Haze IPA" loading="lazy" onerror="this.style.display='none'">
+            </div>
             <span class="beer-badge">IPA</span>
             <h3 class="beer-name">Quantum Haze</h3>
             <p class="beer-desc">A hazy New England IPA alive with tropical mango, guava, and passionfruit. Silky body, pillowy soft, near-zero bitterness. Pure aromatic bliss.</p>
@@ -638,6 +655,9 @@
           </article>
 
           <article class="glass beer rv rv-d2">
+            <div class="beer-img" style="background:linear-gradient(135deg,#08000f 0%,#1a0030 45%,#2d0050 75%,#120018 100%);">
+              <img src="image%20references/beer1.png" alt="Dark Matter Imperial Stout" loading="lazy" onerror="this.style.display='none'">
+            </div>
             <span class="beer-badge">Imperial Stout</span>
             <h3 class="beer-name">Dark Matter</h3>
             <p class="beer-desc">An imperial stout as dense as deep space. Espresso, dark chocolate, dried fruit, and roasted malt. Velvety. Warming. Inevitable.</p>
@@ -648,6 +668,9 @@
           </article>
 
           <article class="glass beer rv rv-d3">
+            <div class="beer-img" style="background:linear-gradient(135deg,#1a1200 0%,#3d2e00 45%,#7a5a00 75%,#4a3800 100%);">
+              <img src="image%20references/beer1.png" alt="Neon Lager" loading="lazy" onerror="this.style.display='none'">
+            </div>
             <span class="beer-badge">Lager</span>
             <h3 class="beer-name">Neon Lager</h3>
             <p class="beer-desc">A crisp pilsner-style lager with a whisper of noble hops. Bright, effortlessly clean, and endlessly drinkable. The crowd-pleaser of the future.</p>
@@ -658,6 +681,9 @@
           </article>
 
           <article class="glass beer rv rv-d4">
+            <div class="beer-img" style="background:linear-gradient(135deg,#1a0010 0%,#3d0025 45%,#7a1045 75%,#3d0030 100%);">
+              <img src="image%20references/beer1.png" alt="Cyber Citrus Sour Gose" loading="lazy" onerror="this.style.display='none'">
+            </div>
             <span class="beer-badge">Sour / Gose</span>
             <h3 class="beer-name">Cyber Citrus</h3>
             <p class="beer-desc">A kettle sour brewed with pink grapefruit zest and Himalayan sea salt. Tart, bright, electric — a voltage surge in pint form.</p>
@@ -668,6 +694,9 @@
           </article>
 
           <article class="glass beer rv rv-d5">
+            <div class="beer-img" style="background:linear-gradient(135deg,#0e1200 0%,#2a2800 45%,#4a4212 75%,#2a3200 100%);">
+              <img src="image%20references/beer1.png" alt="Binary Bloom Saison" loading="lazy" onerror="this.style.display='none'">
+            </div>
             <span class="beer-badge">Saison</span>
             <h3 class="beer-name">Binary Bloom</h3>
             <p class="beer-desc">Belgian-inspired farmhouse ale fermented with wildflower honey, aged on toasted American oak. Earthy, floral, and deeply complex.</p>
@@ -678,6 +707,9 @@
           </article>
 
           <article class="glass beer rv rv-d6">
+            <div class="beer-img" style="background:linear-gradient(135deg,#0d0d0d 0%,#1c1410 45%,#2e2218 75%,#181310 100%);">
+              <img src="image%20references/beer1.png" alt="Signal Smoke Smoked Porter" loading="lazy" onerror="this.style.display='none'">
+            </div>
             <span class="beer-badge">Smoked Porter</span>
             <h3 class="beer-name">Signal Smoke</h3>
             <p class="beer-desc">A smoked Baltic porter layered with campfire, caramel, and dried plum. Bold, authoritative, and smooth as a late-night transmission.</p>
