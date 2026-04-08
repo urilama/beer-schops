@@ -434,10 +434,11 @@
     .beer-img img {
       width: 100%; height: 100%;
       object-fit: contain; object-position: center;
-      display: block; opacity: .9;
-      mix-blend-mode: multiply;
-      filter: brightness(1.4) contrast(1.2) saturate(1.3) drop-shadow(0 6px 16px rgba(0,0,0,0.6));
-      transition: transform .45s cubic-bezier(.16,1,.3,1), opacity .3s, filter .3s;
+      display: block; opacity: .95;
+      -webkit-mask-image: radial-gradient(ellipse 78% 82% at center, black 48%, transparent 82%);
+      mask-image: radial-gradient(ellipse 78% 82% at center, black 48%, transparent 82%);
+      filter: drop-shadow(0 6px 20px rgba(0,0,0,0.55));
+      transition: transform .45s cubic-bezier(.16,1,.3,1), opacity .3s;
     }
     .beer:hover .beer-img img { transform: scale(1.06); opacity: 1; }
 
